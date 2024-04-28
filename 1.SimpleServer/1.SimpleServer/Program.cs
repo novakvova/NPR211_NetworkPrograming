@@ -6,10 +6,24 @@ namespace _1.SimpleServer
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
+            var hostName = Dns.GetHostName();
+            Console.WriteLine("This host name {0}", hostName);
+            IPHostEntry localhost = await Dns.GetHostEntryAsync(hostName);
+            int selectIP = 0;
+            // This is the IP address of the local machine
+            int i = 0;
+            foreach(var item in localhost.AddressList)
+            {
+
+                await Console.Out.WriteLineAsync($"{++i}.{item.ToString()}");
+            }
+            Console.Write("->_");
+            i = int.Parse(Console.ReadLine()) - 1;
             //Локальний ip адреса ПК
-            IPAddress ip = IPAddress.Parse("127.0.0.1");
+            //IPAddress ip = IPAddress.Parse("127.0.0.1");
+            var ip = localhost.AddressList[i];
             int port = 2083;
 
             IPEndPoint endPoint = new IPEndPoint(ip, port);
