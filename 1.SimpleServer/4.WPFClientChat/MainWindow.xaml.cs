@@ -20,5 +20,10 @@ namespace _4.WPFClientChat
         {
             InitializeComponent();
         }
+
+        private void btnPhotoSelect_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
