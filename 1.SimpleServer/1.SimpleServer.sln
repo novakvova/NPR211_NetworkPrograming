@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.SimpleClient", "2.SimpleC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.ServerTCPChat", "3.ServerTCPChat\3.ServerTCPChat.csproj", "{055CA337-1D03-4341-BC5A-616802E8DFB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.WPFClientChat", "4.WPFClientChat\4.WPFClientChat.csproj", "{53C8360D-1BA3-40B4-B984-C9DB0B9E6D69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{055CA337-1D03-4341-BC5A-616802E8DFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{055CA337-1D03-4341-BC5A-616802E8DFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{055CA337-1D03-4341-BC5A-616802E8DFB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C8360D-1BA3-40B4-B984-C9DB0B9E6D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C8360D-1BA3-40B4-B984-C9DB0B9E6D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C8360D-1BA3-40B4-B984-C9DB0B9E6D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C8360D-1BA3-40B4-B984-C9DB0B9E6D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
