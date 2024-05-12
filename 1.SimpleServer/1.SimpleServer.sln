@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SimpleServer", "1.SimpleServer\1.SimpleServer.csproj", "{026C332E-67A3-4C66-BDD8-2BB8105F2DFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.SimpleServer", "1.SimpleServer\1.SimpleServer.csproj", "{026C332E-67A3-4C66-BDD8-2BB8105F2DFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.SimpleClient", "2.SimpleClient\2.SimpleClient.csproj", "{D131F375-1A8E-4B0F-A676-E8E98E0B02A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.SimpleClient", "2.SimpleClient\2.SimpleClient.csproj", "{D131F375-1A8E-4B0F-A676-E8E98E0B02A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.ServerTCPChat", "3.ServerTCPChat\3.ServerTCPChat.csproj", "{055CA337-1D03-4341-BC5A-616802E8DFB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D131F375-1A8E-4B0F-A676-E8E98E0B02A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D131F375-1A8E-4B0F-A676-E8E98E0B02A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D131F375-1A8E-4B0F-A676-E8E98E0B02A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055CA337-1D03-4341-BC5A-616802E8DFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055CA337-1D03-4341-BC5A-616802E8DFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055CA337-1D03-4341-BC5A-616802E8DFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055CA337-1D03-4341-BC5A-616802E8DFB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
