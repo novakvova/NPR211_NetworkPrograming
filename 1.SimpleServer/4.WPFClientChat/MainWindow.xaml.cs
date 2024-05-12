@@ -57,7 +57,8 @@ namespace _4.WPFClientChat
                 {
                     string data = stream.ReadToEnd();
                     var resp = JsonConvert.DeserializeObject<UploadResponseDTO>(data);
-                    MessageBox.Show(serverUrl+resp.Image);
+                    //MessageBox.Show(serverUrl+resp.Image);
+                    ViewMessage("Козак", resp.Image);
                 }
             }
             catch(Exception ex)
@@ -65,6 +66,34 @@ namespace _4.WPFClientChat
                 MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void ViewMessage(string text, string imageUrl)
+        {
+            var grid = new Grid();
+            for (int i = 0; i < 2; i++)
+            {
+                var colDef = new ColumnDefinition();
+                colDef.Width = GridLength.Auto;
+                grid.ColumnDefinitions.Add(colDef);
+            }
+            BitmapImage bmp = new BitmapImage(new Uri($"https://npr211.itstep.click{imageUrl}"));
+            var image = new Image();
+            image.Source = bmp;
+            image.Width = 50;
+            image.Height = 50;
+
+            var textBlock = new TextBlock();
+            Grid.SetColumn(textBlock, 1);
+            textBlock.VerticalAlignment = VerticalAlignment.Center;
+            textBlock.Margin = new Thickness(5, 0, 0, 0);
+            textBlock.Text = text;
+            grid.Children.Add(image);
+            grid.Children.Add(textBlock);
+
+            lbInfo.Items.Add(grid);
+            lbInfo.Items.MoveCurrentToLast();
+            lbInfo.ScrollIntoView(lbInfo.Items.CurrentItem);
         }
     }
 }
