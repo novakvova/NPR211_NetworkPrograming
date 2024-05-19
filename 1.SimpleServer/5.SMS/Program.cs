@@ -1,5 +1,7 @@
 ﻿using System.Net;
 using System;
+using _5.SMS.Models;
+using Newtonsoft.Json;
 
 namespace _5.SMS
 {
@@ -17,6 +19,8 @@ namespace _5.SMS
             request.ContentType = "application/json";
             request.Method = "GET";
 
+            MobizonDTO<BalanceDTO> result;
+
             try
             {
                 // Get the response
@@ -30,6 +34,7 @@ namespace _5.SMS
                         {
                             // Read the content
                             string responseFromServer = reader.ReadToEnd();
+                            result = JsonConvert.DeserializeObject<MobizonDTO<BalanceDTO>>(responseFromServer);
                             // Display the content
                             Console.WriteLine(responseFromServer);
                         }
