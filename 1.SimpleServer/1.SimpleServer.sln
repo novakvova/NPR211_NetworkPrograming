@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.SimpleServer", "1.SimpleS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.SimpleClient", "2.SimpleClient\2.SimpleClient.csproj", "{D131F375-1A8E-4B0F-A676-E8E98E0B02A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.ServerTCPChat", "3.ServerTCPChat\3.ServerTCPChat.csproj", "{055CA337-1D03-4341-BC5A-616802E8DFB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.ServerTCPChat", "3.ServerTCPChat\3.ServerTCPChat.csproj", "{055CA337-1D03-4341-BC5A-616802E8DFB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.WPFClientChat", "4.WPFClientChat\4.WPFClientChat.csproj", "{53C8360D-1BA3-40B4-B984-C9DB0B9E6D69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.WPFClientChat", "4.WPFClientChat\4.WPFClientChat.csproj", "{53C8360D-1BA3-40B4-B984-C9DB0B9E6D69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServerFiles", "WebServerFiles\WebServerFiles.csproj", "{492A43F3-7CF9-4751-BF41-CD5A88E9F900}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServerFiles", "WebServerFiles\WebServerFiles.csproj", "{492A43F3-7CF9-4751-BF41-CD5A88E9F900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.SMS", "5.SMS\5.SMS.csproj", "{4873D7DB-8B7D-4749-BF7E-853A2D821CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{492A43F3-7CF9-4751-BF41-CD5A88E9F900}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492A43F3-7CF9-4751-BF41-CD5A88E9F900}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{492A43F3-7CF9-4751-BF41-CD5A88E9F900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4873D7DB-8B7D-4749-BF7E-853A2D821CEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4873D7DB-8B7D-4749-BF7E-853A2D821CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4873D7DB-8B7D-4749-BF7E-853A2D821CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4873D7DB-8B7D-4749-BF7E-853A2D821CEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

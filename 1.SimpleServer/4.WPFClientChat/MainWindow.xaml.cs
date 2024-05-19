@@ -123,7 +123,8 @@ namespace _4.WPFClientChat
             }
             try
             {
-                IPAddress ip = IPAddress.Parse("127.0.0.1");
+                //IPAddress ip = IPAddress.Parse("127.0.0.1");
+                IPAddress ip = IPAddress.Parse("4.232.129.33");
                 int port = 1243;
                 _message.UserId = Guid.NewGuid().ToString();
                 _message.Name = txtUserName.Text;
