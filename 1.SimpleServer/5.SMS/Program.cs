@@ -10,7 +10,8 @@ namespace _5.SMS
             //string myIP = "3.64.137.133";
             string apiKey = "ua976c69739d15fa0df41dfeebc34fb6c46178e39d211742007203ac01e8970c82235f";
             //Отримати баланс
-            string urlBalance = $@"https://api.mobizon.ua/service/user/getownbalance?apiKey={apiKey}";
+            string urlBalance = $@"http://api.mobizon.ua/service/user/getownbalance?apiKey={apiKey}";
+
 
             WebRequest request = WebRequest.Create(urlBalance);
             request.ContentType = "application/json";
