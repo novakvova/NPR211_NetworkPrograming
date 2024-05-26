@@ -7,6 +7,7 @@ namespace _6.NovaPoshta.Data
     public class MyDataContext : DbContext
     {
         public DbSet<AreaEntity> Areas { get; set; }
+        public DbSet<SettlementEntity> Settlements { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -13,5 +13,6 @@ namespace _6.NovaPoshta.Data.Entities
         public string Ref { get; set; }
         [Required, StringLength(255)]
         public string Name { get; set; }
+        public virtual ICollection<SettlementEntity> Settlements { get; set; }
     }
 }

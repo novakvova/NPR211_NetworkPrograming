@@ -7,6 +7,7 @@
             Console.WriteLine("Привіт козаки!");
             NovaPoshtaService nps = new NovaPoshtaService();
             nps.GetAreas();
+            nps.GetSettlements();
         }
     }
 }
