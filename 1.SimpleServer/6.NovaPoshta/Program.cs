@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Привіт козаки!");
+            NovaPoshtaService nps = new NovaPoshtaService();
+            nps.GetAreas();
         }
     }
 }
